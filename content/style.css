@@ -1,0 +1,46 @@
+/* General style variables that extend across all content files */
+
+:root{
+    --main-bg-color: #0B1416;
+    --alt-bg-color: #132126;
+    --main-font-stlye: ;
+    --main-font-color: #ffffff;
+    --secondary-font-color: #82959B;
+    --tertiary-font-color: #A3E398;
+    --decorative-color-purple: #4C5181;
+    --decorative-color-green: #A3E398 ;
+    --decorative-color-white: #ffffff ;
+    --decorative-color-gray: #D9D9D9;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    grid-template-columns:5% 1fr 5%;
+    
+}
+
+.nav {
+    grid-row: 1;
+    grid-column: 2;
+    color: aliceblue;
+    
+}
+
+.Content {
+    grid-row: 2;
+    grid-column: 2;
+    color: aliceblue;
+}
+
+.background { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-bg-color);
+    
+}
