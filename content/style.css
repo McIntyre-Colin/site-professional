@@ -1,9 +1,12 @@
 /* General style variables that extend across all content files */
 
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
 :root{
     --main-bg-color: #0B1416;
     --alt-bg-color: #132126;
-    --main-font-stlye: ;
+    --tertiary-bg-color: #D9D9D9;
+    --tertiary-bg-color-rba: 217, 217, 217;
     --main-font-color: #ffffff;
     --secondary-font-color: #82959B;
     --tertiary-font-color: #A3E398;
@@ -11,14 +14,21 @@
     --decorative-color-green: #A3E398 ;
     --decorative-color-white: #ffffff ;
     --decorative-color-gray: #D9D9D9;
+    --main-font: 'SF Pro Display', sans-serif;
 }
 
+body {
+    background-image: url(../img/background.png);
+    background-size: cover;
+}
 
 
 .container {
     display: grid;
+    z-index: 1;
     grid-template-rows: 15% 1fr;
     grid-template-columns:5% 1fr 5%;
+    margin-top: 5%;
     
 }
 
@@ -36,7 +46,7 @@
 }
 
 .background { 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;

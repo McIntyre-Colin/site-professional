@@ -2,23 +2,25 @@
 /* Importing static CSS */
 
 @import "../style.css";
+@import "../../img/background.png";
 
 .trapazoid {
-    position: absolute;
-    top: -100px;
-    right: 783px;
+    background-image: url(../../img/background.png);
+    background-size: contain;
+    /* position: relative;
+    z-index: -1;
+    top: -50vw;
     rotate: -90deg;
-	border-bottom: 100vw solid #555;
-	border-left: 25px solid transparent;
-	border-right: -50px solid transparent;;
-	width: 783px;
-    
+	border-bottom: 100vw solid var(--alt-bg-color);
+	border-left: 20vw solid transparent;
+	border-right: -5vw solid transparent;
+    width: 70vw; */
     
 }
 
 .Home {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr;
 }
 
@@ -26,6 +28,9 @@
     grid-row: 1;
     display: flex;
     flex-flow: column;
+    border-color: aliceblue;
+    border-width: 1px;
+    border-style: solid;
     
 }
 
@@ -35,6 +40,17 @@
     justify-content: center;
     height: 110px;
     width: 633px;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110px;
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+
+.gray-text {
+    color: var(--secondary-font-color);
 }
 
 .Home-intro-profession {
@@ -54,5 +70,42 @@
 }
 
 .Home-projects {
+    margin-top: 15px;
     grid-row: 2;
+    border-color: aliceblue;
+    border-width: 1px;
+    border-style: solid;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.Home-projects-title {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 62px;
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+
+
+.Home-projects-items {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Home-projects-project {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(var(--tertiary-bg-color-rba),.1);
+    color: var(--main-font-color);
+    height: 350px;
+    width: 350px;
+    border-radius: 58px;
+    margin-right: 50px;
 }
