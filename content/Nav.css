@@ -19,16 +19,29 @@
     justify-content: space-between;
     align-items: center;
     width: 292px;
-    height: 59x;
+    height: 59px;
     margin-left: 42px;
 }
 
 .Nav-tab {
     color: var(--unactive-font);
     font-family: var(--main-font);
+    height: 45px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 48px;
+    cursor: pointer;
 }
 
+.Nav-tab:hover {
+    color: #ffffff;
+    transition: .1s;
+}
+
+.active {
+    color: #ffffff;
+    border-bottom: solid #4C5181;
+    border-width: 5px;
+    width: fit-content;
+}
