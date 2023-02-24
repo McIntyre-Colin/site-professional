@@ -10,7 +10,7 @@
     --main-font-color: #ffffff;
     --secondary-font-color: #82959B;
     --tertiary-font-color: #A3E398;
-    --decorative-color-purple: #4C5181;
+    --decorative-color-purple: #988EFF;
     --decorative-color-green: #A3E398 ;
     --decorative-color-white: #ffffff ;
     --decorative-color-gray: #D9D9D9;
@@ -27,7 +27,7 @@ body {
     display: grid;
     z-index: 1;
     grid-template-rows: 15% 1fr;
-    grid-template-columns:5% 1fr 5%;
+    grid-template-columns:5% auto 5%;
     margin-top: 5%;
     
 }

@@ -2,6 +2,7 @@
 /* Importing static CSS */
 
 @import "../style.css";
+@import "../rectangles.css";
 @import "../../img/background.png";
 
 .trapazoid {
@@ -20,17 +21,16 @@
 
 .Home {
     display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 100vh;
 }
 
 .Home-intro {
     grid-row: 1;
     display: flex;
     flex-flow: column;
-    border-color: aliceblue;
-    border-width: 1px;
-    border-style: solid;
+    /* border-color: aliceblue;
+    border-width: 1px; */
+    /* border-style: solid; */
     
 }
 
@@ -47,6 +47,7 @@
     letter-spacing: 0.02em;
     font-family: var(--main-font);
     color: var(--main-font-color);
+    margin-top: 10vh;
 }
 
 .gray-text {
@@ -109,3 +110,21 @@
     border-radius: 58px;
     margin-right: 50px;
 }
+
+
+
+/* .white-rectangle-th {
+
+}
+
+.white-rectangle {
+
+}
+
+.purple-rectangle {
+
+}
+
+.gray-rectangle-solid {
+
+} */

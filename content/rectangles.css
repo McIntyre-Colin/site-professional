@@ -1,0 +1,90 @@
+/* This is for the decorative rectangles */
+
+@import "/content/style.css";
+
+.rectangles {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.green-rectangle {
+    position: absolute;
+    width: 387px;
+    height: 387px;
+    border-radius: 38px;
+    border-style: solid;
+    border-width: 6px;
+    border-color:var(--decorative-color-green) ;
+    top: -425px;
+    left: 850px;
+}
+
+.purple-rectangle-solid {
+    position: absolute;
+    z-index: -1;
+    width: 114px;
+    height: 114px;
+    border-radius: 24px;
+    opacity: .4;
+    background-color:var(--decorative-color-purple) ;
+    left: 1176px;
+    top: -130px;
+}
+
+.gray-rectangle-solid {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background-color: var(--decorative-color-white);
+    opacity: .1;
+    top: 0px;
+    left: 850px;
+
+}
+
+.gray-rectangle-open {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 78px;
+    border-width: 19px;
+    border-style: solid;
+    border-color: var(--decorative-color-gray);
+    opacity: .17;
+    top: 50px;
+    left: 880px;
+
+}
+
+.white-rectangle-th {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 54px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--decorative-color-white);
+    top: 150px;
+    left: 800px;
+ 
+}
+
+
+ /* .white-rectangle-th {
+
+}
+
+.white-rectangle {
+
+}
+
+.purple-rectangle {
+
+}
+
+ */
+
