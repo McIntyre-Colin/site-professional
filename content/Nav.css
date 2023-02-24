@@ -1,0 +1,34 @@
+/* CSS for Nav Bar */
+@import "./style.css";
+
+:root{
+    --unactive-font: #82959B;
+    --active-font: #ffffff;
+}
+
+.Nav-icon {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    height: 59px;
+    width: 59px;
+}
+
+
+.Nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 292px;
+    height: 59x;
+    margin-left: 42px;
+}
+
+.Nav-tab {
+    color: var(--unactive-font);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 48px;
+}
+

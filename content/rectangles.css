@@ -2,12 +2,22 @@
 
 @import "/content/style.css";
 
+:root {
+    --pulse: pulse 2s alternate infinite ease-in-out;
+    --pulse-quick: pulse 1.5s alternate infinite ease-in-out
+}
+
 .rectangles {
     position: relative;
     top: 0;
-    left: 0;
+    left: 100px;
     right: 0;
     bottom: 0;
+}
+
+@keyframes pulse {
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}
 }
 
 .green-rectangle {
@@ -20,6 +30,8 @@
     border-color:var(--decorative-color-green) ;
     top: -425px;
     left: 850px;
+    animation: var(--pulse);
+    animation-delay: .15s;
 }
 
 .purple-rectangle-solid {
@@ -32,6 +44,37 @@
     background-color:var(--decorative-color-purple) ;
     left: 1176px;
     top: -130px;
+    animation: var(--pulse-quick);
+    animation-delay: .1s;
+}
+
+.purple-rectangle-solid2 {
+    position: absolute;
+    z-index: -1;
+    width: 114px;
+    height: 114px;
+    border-radius: 24px;
+    opacity: .4;
+    background-color:var(--decorative-color-purple) ;
+    left: -350px;
+    top: 800px;
+    animation: var(--pulse-quick);
+    animation-delay: .6s;
+}
+
+.purple-rectangle-th {
+    position: absolute;
+    z-index: -2;
+    width: 159px;
+    height: 159px;
+    border-radius: 38px;
+    border-width: 8px;
+    border-style: solid;
+    border-color:var(--decorative-color-purple) ;
+    left: 1080px;
+    top: 250px;
+    animation: var(--pulse-quick);
+    animation-delay: 1.5s;
 }
 
 .gray-rectangle-solid {
@@ -43,10 +86,27 @@
     opacity: .1;
     top: 0px;
     left: 850px;
+    animation: var(--pulse);
+    animation-delay: .25s;
 
 }
 
-.gray-rectangle-open {
+/* Second gray rectangle */
+.gray-rectangle-solid2 {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    border-radius: 17px;
+    background-color: var(--decorative-color-white);
+    opacity: .1;
+    top: 450px;
+    left: 1100px;
+    animation: var(--pulse);
+    animation-delay: .03s;
+
+}
+
+.gray-rectangle-th {
     position: absolute;
     width: 332px;
     height: 332px;
@@ -57,6 +117,24 @@
     opacity: .17;
     top: 50px;
     left: 880px;
+    animation: var(--pulse);
+    animation-delay: .15s;
+
+}
+
+.gray-rectangle-th2 {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 78px;
+    border-width: 19px;
+    border-style: solid;
+    border-color: var(--decorative-color-gray);
+    opacity: .17;
+    top: 650px;
+    left: -400px;
+    animation: var(--pulse);
+    animation-delay: .08s;
 
 }
 
@@ -69,22 +147,24 @@
     border-style: solid;
     border-color: var(--decorative-color-white);
     top: 150px;
-    left: 800px;
+    left: 820px;
+    animation: var(--pulse);
+    animation-delay: 1s;
  
 }
 
-
- /* .white-rectangle-th {
-
+.white-rectangle-th2 {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 54px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--decorative-color-white);
+    top: 500px;
+    left: -500px;
+    animation: var(--pulse);
+    animation-delay: 1s;
+ 
 }
-
-.white-rectangle {
-
-}
-
-.purple-rectangle {
-
-}
-
- */
 

@@ -3,7 +3,8 @@
 
 @import "../style.css";
 @import "../rectangles.css";
-@import "../../img/background.png";
+@import "../Button.css";
+@import "../Nav.css";
 
 .trapazoid {
     background-image: url(../../img/background.png);
@@ -48,6 +49,7 @@
     font-family: var(--main-font);
     color: var(--main-font-color);
     margin-top: 10vh;
+    margin-bottom: 44px;
 }
 
 .gray-text {
@@ -60,6 +62,13 @@
     justify-content: center;
     height: 96px;
     width: 633px;
+    font-family: var(--main-font);
+    color: var(--alt-font-color);
+    font-style: normal;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 8px;
 }
 
 .Home-intro-hobbies {
@@ -68,14 +77,17 @@
     justify-content: center;
     height: 48px;
     width: 633px;
+    font-family: var(--main-font);
+    color: var(--tertiary-font-color);
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 48px;
 }
 
 .Home-projects {
     margin-top: 15px;
     grid-row: 2;
-    border-color: aliceblue;
-    border-width: 1px;
-    border-style: solid;
     display: grid;
     grid-template-rows: 100px 1fr;
 }
@@ -98,17 +110,53 @@
 .Home-projects-items {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
 }
 
 .Home-projects-project {
+    display: grid;
+    grid-template-rows: 301px auto;
+    height: 301px;
+    width: 963px;
+    margin-bottom: 101px;
+}
+
+.Home-projects-project-image {
+    grid-column: 1;
+    height: 301px;
+    width: 301px;
+    background-color: lightgrey;
+    border-radius: 24px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.Home-projects-project-content {
+    grid-column: 2;
     display: flex;
-    justify-content: center;
-    background-color: rgba(var(--tertiary-bg-color-rba),.1);
-    color: var(--main-font-color);
-    height: 350px;
-    width: 350px;
-    border-radius: 58px;
-    margin-right: 50px;
+    flex-direction: column;
+}
+
+.Home-projects-project-title {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 48px;
+    width: 254px;
+    height: 48px;
+
+}
+
+.Home-projects-project-bullet {
+    width: 633px;
+    height: 105px;
+    color: var(--gray-font-color);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
 }
 
 
