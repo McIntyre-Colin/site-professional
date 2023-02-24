@@ -16,3 +16,8 @@ function active_class_changer() {
         });
     }
 }
+
+function scrollDiv() {
+    var elem = document.getElementById("projectContainer");
+    elem.scrollIntoView();
+}

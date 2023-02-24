@@ -15,6 +15,7 @@
     font-weight: 600;
     font-size: 19px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 /* .Search-area-text:hover {
@@ -22,6 +23,6 @@
 } */
 
 .project-button:hover {
-    background-color:var(--main-bg-color);
+    background-color: #40494c;
     color: var(--main-text-color);    
 }

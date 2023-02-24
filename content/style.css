@@ -17,6 +17,7 @@
     --decorative-color-white: #ffffff ;
     --decorative-color-gray: #D9D9D9;
     --main-font: 'SF Pro Display', sans-serif;
+    --letter-spacing: .05em;
 }
 
 body {
