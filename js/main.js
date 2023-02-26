@@ -17,7 +17,16 @@ function active_class_changer() {
     }
 }
 
-function scrollDiv() {
-    var elem = document.getElementById("projectContainer");
-    elem.scrollIntoView();
-}
+// Function to scroll page down to the projects
+    const scrollIntoViewWithOffset = (id, offset) => {
+        window.scrollTo({
+          behavior: 'smooth',
+          top:
+            document.getElementById(id).getBoundingClientRect().top -
+            document.body.getBoundingClientRect().top -
+            offset,
+        })
+      }
+      
+    // var elem = document.getElementById("projectContainer");
+    // elem.scrollIntoView({behavior:"smooth", block:"center"});
