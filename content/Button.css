@@ -1,8 +1,9 @@
 /* Button CSS */
 @import "../content/style.css";
 
-.project-button {
+.button {
     margin-top: 52px;
+    margin-right: 30px;
     display: flex;
     height: 64px;
     justify-content: center;
@@ -10,7 +11,10 @@
     background-color: #2E3537;
     font-family: var(--main-font);
     border-radius: 10px;
-    width: 230px;
+    width: fit-content;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     transition: all .2s;
     font-weight: 600;
     font-size: 19px;
@@ -18,11 +22,20 @@
     cursor: pointer;
 }
 
-/* .Search-area-text:hover {
-    
-} */
+.secondary {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #82959B;
+    opacity: .7;
+}
 
-.project-button:hover {
+
+.button:hover {
     background-color: #40494c;
     color: var(--main-text-color);    
+}
+
+.secondary:hover {
+    opacity: 1;
 }

@@ -1,108 +1,223 @@
+/* CSS for Home page of website */
+/* Importing static CSS */
 
+@import "../style.css";
+@import "../rectangles-about.css";
+@import "../Button.css";
+@import "../Nav.css";
 
-
-.header {
-    font-family: 'Adobe Caslon Pro', sans-serif;
-    font-size: 30pt;
-    font-weight: 500;
-
-
-}
-
-
-.sub-header {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-size: 20pt;
-    font-weight: 300;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    margin-top: 10px;
-    color: antiquewhite;
-    background:  linear-gradient(to bottom right ,  #3d314a, #897d9b);
-    border-radius: 5px;
-
+.trapazoid {
+    background-image: url(../../img/background.png);
+    background-size: contain;
     
 }
 
-.job-title {
-    font-family: 'Adobe Caslon Pro', sans-serif;
-    font-size: 20pt;
-    font-weight: 300;
-    padding: 5px;
+.About {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    display: grid;
+    grid-template-rows: 80vh 100vh;
 }
 
-.border-top {
-    border-top: 1px solid #ddd;
+.About-intro {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10vh;
+
 }
 
-.hobby-text {
-    background: rgba(122, 120, 120, 0.719);
+.About-intro-picture {
+    grid-template-columns: 1;
+    background-image: url(../../img/profile_pic.png);
     background-size: contain;
-    border-radius: 5px;
-    padding:5px;
+    width: 411px;
+    height: 411px;
+    border-radius: 80px;
+    display: flex;
+   
 }
 
-.body-text {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 13pt;
+.About-intro-content {
+    grid-template-columns: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.About-intro-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+    width: 633px;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110px;
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+
+.About-intro-profession {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 96px;
+    width: 633px;
+    font-family: var(--main-font);
+    color: var(--alt-font-color);
+    font-style: normal;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 8px;
+    letter-spacing: var(--letter-spacing);
+}
+
+.About-intro-hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 48px;
+    width: 633px;
+    font-family: var(--main-font);
+    color: var(--tertiary-font-color);
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: var(--letter-spacing);
+}
+
+.About-intro-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.About-experience {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.Home-projects-title {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 62px;
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+
+
+.Home-projects-items {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.Home-projects-project {
+    display: grid;
+    grid-template-columns: 301px auto;
+    height: 301px;
+    width: 963px;
+    margin-bottom: 101px;
+}
+
+.Home-projects-project:nth-of-type(even) {
+    display: grid;
+    grid-template-columns: auto 301px;
+    height: 301px;
+    width: 963px;
+    margin-bottom: 101px;
+}
+
+.Home-projects-project-image {
+    grid-column: 1;
+    grid-row: 1;
+    height: 301px;
+    width: 301px;
+    background-color: lightgrey;
+    border-radius: 24px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.Home-projects-project-image:nth-of-type(even) {
+    grid-column: 2;
+    grid-row: 1;
+    height: 301px;
+    width: 301px;
+    background-color: lightgrey;
+    border-radius: 24px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.Home-projects-project-content {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    
+}
+
+.Home-projects-project-content:nth-of-type(odd) {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.Home-projects-project-title {
+    font-family: var(--main-font);
+    font-style: normal;
     font-weight: 500;
-    padding: 5px;
-    margin: 5px;
-    border: solid black 2px;
-    border-radius: 5px;
-}
-
-.body-text-about-me {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 13pt;
-    font-weight: 500;
-    padding: 50px;
-    margin: 5px;
-    border: solid black 2px;
-    border-radius: 5px;
-    height: 500px;
+    font-size: 25px;
+    line-height: 48px;
+    width: 254px;
+    height: 48px;
+    letter-spacing: var(--letter-spacing);
 
 }
 
-.body-text-no-bord {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 13pt;
-    font-weight: 500;
-    padding: 5px;
+.Home-projects-project-bullet {
+    width: 633px;
+    height: 105px;
+    color: var(--gray-font-color);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: var(--letter-spacing);
+}
+
+
+
+/* .white-rectangle-th {
 
 }
 
-.download-button {
-    background:  linear-gradient(to bottom right ,  #3d314a, #897d9b);
+.white-rectangle {
 
 }
 
-.work-img {
-    height: 75px;
-    width: 75px;
-}
-
-.nav-active-tab {
-    color: white;
-    font-size: 18pt;
-    padding: 5px;
-    text-align: top;
+.purple-rectangle {
 
 }
 
-.img-caption {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 13pt;
-    font-weight: 500;
+.gray-rectangle-solid {
 
-}
-
-.rotate-cw {
-    transform: rotate(90deg);
-}
-
-.rotate-ccw {
-    transform: rotate(-90deg);
-}
+} */
