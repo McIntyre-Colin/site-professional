@@ -6,12 +6,6 @@
 @import "../Button.css";
 @import "../Nav.css";
 
-.trapazoid {
-    background-image: url(../../img/background.png);
-    background-size: contain;
-    
-}
-
 .About {
     /* display: flex;
     flex-direction: column;
@@ -158,8 +152,6 @@
     justify-content: center;
     align-items: flex-start;
     padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     font-family: var(--main-font);
     color: var(--alt-font-color);
     font-style: normal;
