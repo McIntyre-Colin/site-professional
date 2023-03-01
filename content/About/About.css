@@ -104,7 +104,7 @@
     grid-template-rows: 100px 1fr;
 }
 
-.Home-projects-title {
+.About-experience-header {
     grid-row: 1;
     display: flex;
     flex-direction: column;
@@ -116,108 +116,59 @@
     letter-spacing: 0.02em;
     font-family: var(--main-font);
     color: var(--main-font-color);
+    margin-bottom: 80px;
 }
 
 
-.Home-projects-items {
+.About-experience-content {
+    grid-row: 2;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-.Home-projects-project {
+.About-experience-content-item {
     display: grid;
-    grid-template-columns: 301px auto;
-    height: 301px;
-    width: 963px;
-    margin-bottom: 101px;
+    grid-template-columns: 300px 40vw;
+    grid-template-rows: 150px;
+    margin-bottom: 75px
 }
 
-.Home-projects-project:nth-of-type(even) {
-    display: grid;
-    grid-template-columns: auto 301px;
-    height: 301px;
-    width: 963px;
-    margin-bottom: 101px;
-}
-
-.Home-projects-project-image {
-    grid-column: 1;
-    grid-row: 1;
-    height: 301px;
-    width: 301px;
-    background-color: lightgrey;
-    border-radius: 24px;
-    position: relative;
-    margin-right: 30px;
-}
-
-.Home-projects-project-image:nth-of-type(even) {
-    grid-column: 2;
-    grid-row: 1;
-    height: 301px;
-    width: 301px;
-    background-color: lightgrey;
-    border-radius: 24px;
-    position: relative;
-    margin-right: 30px;
-}
-
-.Home-projects-project-content {
-    grid-column: 2;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    
-}
-
-.Home-projects-project-content:nth-of-type(odd) {
+.About-experience-content-name {
     grid-column: 1;
     grid-row: 1;
     display: flex;
-    flex-direction: column;
-    margin-left: 0;
-}
-
-.Home-projects-project-title {
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: center;
     font-family: var(--main-font);
+    color: var(--alt-font-color);
     font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 48px;
-    width: 254px;
-    height: 48px;
-    letter-spacing: var(--letter-spacing);
-
-}
-
-.Home-projects-project-bullet {
-    width: 633px;
-    height: 105px;
-    color: var(--gray-font-color);
-    font-family: var(--main-font);
-    font-style: normal;
+    font-size: 34px;
     font-weight: 400;
-    font-size: 19px;
-    line-height: 32px;
+    line-height: 48px;
     letter-spacing: var(--letter-spacing);
 }
 
-
-
-/* .white-rectangle-th {
-
+.About-experience-content-description {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: var(--main-font);
+    color: var(--alt-font-color);
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
 }
 
-.white-rectangle {
-
+.content-background {
+    background-color: rgba(217, 217, 217, .1);
+    border-radius: 22px;
 }
-
-.purple-rectangle {
-
-}
-
-.gray-rectangle-solid {
-
-} */
