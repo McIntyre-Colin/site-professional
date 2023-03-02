@@ -56,15 +56,15 @@
           <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/domLdG4IfpNwm40WJHkb">
            <div class="Contact-intro-form">
             <label for="name">Name</label>
-            <input class="input" type="text" name="name">
+            <input class="input" type="text" name="name" rules="required|max:255">
            </div>
            <div class="Contact-intro-form">
             <label for="email">Email</label>
-            <input class="input" type="text" name="email">
+            <input class="input" type="text" name="email" rules="required|email|max:255">
            </div>
            <div class="Contact-intro-form large">
             <label for="message">Message</label>
-            <input class="input large" type="text" name="message">
+            <input class="input large" type="text" name="message" rules="required|max:255">
            </div>
             <button class="button" type="submit">Submit</button>
             <!-- <div class="Contact-intro-form">Name</div>
