@@ -57,16 +57,16 @@
 
 .Contact-intro-form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     height: 48px;
     width: 633px;
     font-family: var(--main-font);
     color: var(--faded-font-color);
-    border-color: var(--faded-font-color);
+    /* border-color: var(--faded-font-color);
     border-width: 1px;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 8px; */
     font-style: normal;
     padding: 8px 20px;
     margin-bottom: 40px;
@@ -76,13 +76,24 @@
     letter-spacing: var(--letter-spacing);
 }
 
+.input {
+    color: var(--faded-font-color);
+    border-color: var(--faded-font-color);
+    height: 48px;
+    width: 633px;
+    margin-left: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
 .large {
     height: 200px;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #email {
     position: relative;
-    text-decoration: underline !important;
-    cursor: pointer;
 }
