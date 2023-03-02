@@ -28,5 +28,50 @@ function active_class_changer() {
         })
       }
       
-    // var elem = document.getElementById("projectContainer");
-    // elem.scrollIntoView({behavior:"smooth", block:"center"});
+function showNotification() {
+    var showDiv = document.getElementById('copied')
+    showDiv.style.display = "block"
+    
+}
+
+// Function to copy text specifically for the email
+
+function copyText() {
+    var copiedDiv = document.getElementById('email');
+    var content = copiedDiv.innerText;
+    navigator.clipboard.writeText
+        (content);
+    // showNotification()
+}
+
+
+
+
+
+const dropdown = document.querySelector(".dropdown");
+const toggle = document.querySelector(".toggle-dropdown");
+
+toggle.addEventListener("click", () => {
+  var div = document.getElementById("copied");
+  dropdown.classList.toggle("expanded");
+  setTimeout(() => {dropdown.classList.toggle("expanded")}, 3000);
+  requestAnimationFrame(fadeOut);
+});
+
+var opacity = 100;
+function fadeOut() {
+    var div = document.getElementById("copied");
+    opacity--;
+    div.style.opacity = opacity/100;
+    if (opacity > 0){
+        requestAnimationFrame(fadeOut);
+    } else if (opacity < 0) {
+        opacity = 100;
+        requestAnimationFrame(fadeOut)
+    }
+    }
+
+
+
+
+
