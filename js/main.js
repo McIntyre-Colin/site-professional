@@ -44,7 +44,7 @@ function copyText() {
     
 }
 
-//Function to delete annoying popup elements
+//Function to delete annoying popup elements from KwesForms
 const form = document.querySelector("div")
 form.addEventListener("load", () => {
     const warn = document.getElementById('kw-warning')
