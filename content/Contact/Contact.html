@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="Contact.css">
     <link rel="stylesheet" href="../rectangles-contact.css">
 </head>
-<body class="background">
+<body class="background" onload="err()" onclick="err()">
 
      <!--Contact page-->
      <div class="container">
@@ -39,7 +39,7 @@
       </div>
      </div>
       <div class="Content">
-      <div class="Contact">>
+      <div class="Contact">
       
         <div class="Contact-intro">
             <div class="Contact-intro-header">
@@ -51,23 +51,20 @@
                   colinhmcintyre@gmail.com<span class="dropdown" id="copied">Copied!</span></span>
               or on <a class="link" href="https://www.linkedin.com/in/mcintyre-colin/" target="_blank">LinkedIn</a>
           </div>
-          <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/domLdG4IfpNwm40WJHkb" 
+          <form id="myForm" class="kwes-form" action="https://kwesforms.com/api/foreign/forms/domLdG4IfpNwm40WJHkb" 
           mode="test"
+          onclick="err()"
           >
            <div class="Contact-intro-form">
             <input placeholder="Name" class="input" type="text" name="name" rules="required|max:255" >
            </div>
            <div class="Contact-intro-form">
-            <input placeholder="Email" class="input" type="text" name="email" rules="required|email|max:255">
+            <input  placeholder="Email" class="input" type="text" name="email" rules="required|email|max:255">
            </div>
            <div class="Contact-intro-form large">
             <textarea placeholder="Message" class="input large" type="text" name="message" rules="required|max:255"></textarea>
            </div>
             <button class="button" type="submit">Submit</button>
-            <!-- <div class="Contact-intro-form">Name</div>
-            <div class="Contact-intro-form">Email</div>
-            <div class="Contact-intro-form large">Message</div> -->
-            <!-- <div class="button">Send Message</div> -->
           </form>
           </div>
           

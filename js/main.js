@@ -45,32 +45,22 @@ function copyText() {
 }
 
 //Function to delete annoying popup elements from KwesForms
-const form = document.querySelector("div")
-form.addEventListener("load", () => {
-    const warn = document.getElementById('kw-warning')
-    console.log('the warnings are: ', warn)
-    warn.style.display = 'none';
-})
+// Redundent for css override
+function err () {
+    const err = document.querySelector(".kw-alert")
+    console.log('the error is: ', err)
+    err.style.display = 'none';
+}
 
+// Tab to circumvent the free version of kwesforms opening a form submission window
+// function openWindow() {
+//     setTimeout(function () {
+//         window.location.href = "Contact.html"; //will redirect to your blog page (an ex: blog.html)
+//      }, 2000); //will call the function after 2 secs.
+     
+// }
 
-form.addEventListener("load", () => {
-    var warning = document.getElementsByClassName('kw-alert')
-    console.log('the warnings are: ', warning)
-    while(warning.length > 0){
-        warning[0].parentNode.removeChild(warning[0]);
-    }
-})
-form.addEventListener("click", () => {
-    var warning = document.getElementsByClassName('kw-alert')
-    console.log('the warnings are: ', warning)
-    while(warning.length > 0){
-        warning[0].parentNode.removeChild(warning[0]);
-    }
-})
-
-
-
-//Function for fun copied animation on about page
+//Function for fun 'copied' animation on about page
 
 const dropdown = document.querySelector(".dropdown");
 const toggle = document.querySelector(".toggle-dropdown");

@@ -104,6 +104,17 @@
     text-decoration: underline;
 }
 
-.kw-alert {
-    display: none;
+.kw-alert-error{
+    display: none !important;
+}
+
+.kw-alert-warning{
+    display: none !important;
+}
+
+.kw-field-error-message{
+    display: flex !important;
+    font-family: var(--main-font) !important;
+    font-weight: 200 !important;
+    margin-left: 10px !important;
 }
