@@ -48,23 +48,20 @@
             <div class="Contact-intro-subheader">
               <span>I’d love to get in touch! You can also shoot me an email directly at 
                 <span id="email" class="toggle-dropdown" onclick="copyText()">
-                  colinhmcintyre@gmail.com
-                <span class="dropdown" id="copied">Copied!</span>
-                </span>
-                or on <a class="link" href="https://www.linkedin.com/in/mcintyre-colin/" target="_blank">LinkedIn</a>
+                  colinhmcintyre@gmail.com<span class="dropdown" id="copied">Copied!</span></span>
+              or on <a class="link" href="https://www.linkedin.com/in/mcintyre-colin/" target="_blank">LinkedIn</a>
           </div>
-          <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/domLdG4IfpNwm40WJHkb">
+          <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/domLdG4IfpNwm40WJHkb" 
+          mode="test"
+          >
            <div class="Contact-intro-form">
-            <label for="name">Name</label>
-            <input class="input" type="text" name="name" rules="required|max:255">
+            <input placeholder="Name" class="input" type="text" name="name" rules="required|max:255" >
            </div>
            <div class="Contact-intro-form">
-            <label for="email">Email</label>
-            <input class="input" type="text" name="email" rules="required|email|max:255">
+            <input placeholder="Email" class="input" type="text" name="email" rules="required|email|max:255">
            </div>
            <div class="Contact-intro-form large">
-            <label for="message">Message</label>
-            <input class="input large" type="text" name="message" rules="required|max:255">
+            <textarea placeholder="Message" class="input large" type="text" name="message" rules="required|max:255"></textarea>
            </div>
             <button class="button" type="submit">Submit</button>
             <!-- <div class="Contact-intro-form">Name</div>
@@ -73,6 +70,7 @@
             <!-- <div class="button">Send Message</div> -->
           </form>
           </div>
+          
         </div>
       </div>
       </div>

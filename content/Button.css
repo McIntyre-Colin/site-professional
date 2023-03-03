@@ -10,6 +10,7 @@
     align-items: center;
     background-color: #2E3537;
     font-family: var(--main-font);
+    border-color: transparent;
     border-radius: 10px;
     width: fit-content;
     padding: 20px;
@@ -20,6 +21,7 @@
     font-size: 19px;
     color: #ffffff;
     cursor: pointer;
+    outline: none;
 }
 
 .secondary {

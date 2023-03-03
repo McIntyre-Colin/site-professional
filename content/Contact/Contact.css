@@ -60,7 +60,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 48px;
-    width: 633px;
+    width: 800px;
     font-family: var(--main-font);
     color: var(--faded-font-color);
     /* border-color: var(--faded-font-color);
@@ -68,7 +68,6 @@
     border-style: solid;
     border-radius: 8px; */
     font-style: normal;
-    padding: 8px 20px;
     margin-bottom: 40px;
     font-size: 17px;
     font-weight: 400;
@@ -77,23 +76,30 @@
 }
 
 .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: var(--faded-font-color);
-    border-color: var(--faded-font-color);
+    border-color: var(--faded-font-color) !important;
+    outline: none;
     height: 48px;
     width: 633px;
-    margin-left: 15px;
+    resize: none;
+    padding-left: 15px;
     border-width: 1px;
     border-style: solid;
     border-radius: 8px;
     background-color: transparent;
+    overflow-wrap: break-word;
 }
+
 
 .large {
     height: 200px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    
 }
 
 #email {
     position: relative;
+    text-decoration: underline;
 }

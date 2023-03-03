@@ -41,12 +41,36 @@ function copyText() {
     var content = copiedDiv.innerText;
     navigator.clipboard.writeText
         (content);
-    // showNotification()
+    
 }
 
+//Function to delete annoying popup elements
+const form = document.querySelector("div")
+form.addEventListener("load", () => {
+    const warn = document.getElementById('kw-warning')
+    console.log('the warnings are: ', warn)
+    warn.style.display = 'none';
+})
+
+
+form.addEventListener("load", () => {
+    var warning = document.getElementsByClassName('kw-alert')
+    console.log('the warnings are: ', warning)
+    while(warning.length > 0){
+        warning[0].parentNode.removeChild(warning[0]);
+    }
+})
+form.addEventListener("click", () => {
+    var warning = document.getElementsByClassName('kw-alert')
+    console.log('the warnings are: ', warning)
+    while(warning.length > 0){
+        warning[0].parentNode.removeChild(warning[0]);
+    }
+})
 
 
 
+//Function for fun copied animation on about page
 
 const dropdown = document.querySelector(".dropdown");
 const toggle = document.querySelector(".toggle-dropdown");
