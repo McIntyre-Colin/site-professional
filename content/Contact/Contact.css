@@ -60,7 +60,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 48px;
-    width: 800px;
+    width: 850px;
     font-family: var(--main-font);
     color: var(--faded-font-color);
     /* border-color: var(--faded-font-color);
@@ -117,4 +117,7 @@
     font-family: var(--main-font) !important;
     font-weight: 200 !important;
     margin-left: 10px !important;
+    color: var(--faded-font-color) !important;
+    font-size: 1em !important;
+    z-index: 10 !important;
 }
