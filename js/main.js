@@ -53,12 +53,12 @@ function err () {
 }
 
 // Tab to circumvent the free version of kwesforms opening a form submission window
-// function openWindow() {
-//     setTimeout(function () {
-//         window.location.href = "Contact.html"; //will redirect to your blog page (an ex: blog.html)
-//      }, 2000); //will call the function after 2 secs.
+function openWindow() {
+    setTimeout(function () {
+        window.location.href = "Contact.html"; //will redirect to your blog page (an ex: blog.html)
+     }, 2000); //will call the function after 2 secs.
      
-// }
+}
 
 //Function for fun 'copied' animation on about page
 
