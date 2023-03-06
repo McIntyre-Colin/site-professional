@@ -7,9 +7,6 @@
 @import "../Nav.css";
 
 .About {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     display: grid;
     grid-template-rows: 80vh 100vh;
 }
@@ -23,6 +20,7 @@
 }
 
 .About-intro-picture {
+    position: relative;
     grid-template-columns: 1;
     background-image: url(../../img/profile_pic.png);
     background-size: contain;

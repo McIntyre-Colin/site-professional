@@ -64,7 +64,12 @@
            <div class="Contact-intro-form large">
             <textarea placeholder="Message" class="input large" type="text" name="message" rules="required|max:255"></textarea>
            </div>
-            <button onclick="openWindow()" class="button" type="submit">Submit</button>
+            <div onclick="openWindow()">
+              <span class="toggle-submit-dropdown">
+              <span class="submit-dropdown" id="formSubmitted">Thank you for your submission!</span>
+              </span>
+              <button onclick="openWindow()" class="button" type="submit">Submit</button>
+            </div>
           </form>
           </div>
           
@@ -72,6 +77,6 @@
       </div>
       </div>
     
-  <script src="../../js/main.js"></script>
   <script src="https://kwesforms.com/v2/kwes-script.js" defer></script> 
+  <script src="../../js/main.js"></script>
 </body>

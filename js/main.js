@@ -54,10 +54,26 @@ function err () {
 
 // Tab to circumvent the free version of kwesforms opening a form submission window
 function openWindow() {
+    sessionStorage.setItem("reloading", "true");
     setTimeout(function () {
+        console.log('waiting')
+        // window.open("Contact.html")
         window.location.href = "Contact.html"; //will redirect to your blog page (an ex: blog.html)
-     }, 2000); //will call the function after 2 secs.
+     }, 100); //will call the function after 2 secs.
      
+}
+
+window.onload = function() {
+    const submitDropdown = document.querySelector(".submit-dropdown")
+    const submitToggle = document.querySelector(".toggle-submit-dropdown");
+    var reloading = sessionStorage.getItem("reloading");
+    if (reloading) {
+        sessionStorage.removeItem("reloading");
+        var submital = document.getElementById("formSubmitted");
+        submitDropdown.classList.toggle("submit-expanded");
+        // setTimeout(() => {dropdown.classList.toggle("submit-expanded")}, 5000);
+        // requestAnimationFrame(fadeOutForm);
+    }
 }
 
 //Function for fun 'copied' animation on about page
@@ -84,6 +100,19 @@ function fadeOut() {
         requestAnimationFrame(fadeOut)
     }
     }
+
+var opacity = 100;
+function fadeOutForm() {
+        var div = document.getElementById("formSubmitted");
+        opacity--;
+        div.style.opacity = opacity/100;
+        if (opacity > 0){
+            requestAnimationFrame(fadeOutForm);
+        } else if (opacity < 0) {
+            opacity = 100;
+            requestAnimationFrame(fadeOutForm)
+        }
+        }
 
 
 
