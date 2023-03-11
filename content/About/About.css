@@ -122,7 +122,7 @@
 .About-experience-content-item {
     display: grid;
     grid-template-columns: 300px 40vw;
-    grid-template-rows: 150px;
+    grid-template-rows: 300px;
     margin-bottom: 75px
 }
 

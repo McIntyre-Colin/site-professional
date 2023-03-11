@@ -58,7 +58,7 @@ function openWindow() {
     setTimeout(function () {
         console.log('waiting')
         // window.open("Contact.html")
-        window.location.href = "Contact.html"; //will redirect to your blog page (an ex: blog.html)
+        window.location.href = "../Thankyou/Thankyou.html"; //will redirect to your blog page (an ex: blog.html)
      }, 100); //will call the function after 2 secs.
      
 }

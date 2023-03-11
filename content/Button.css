@@ -19,7 +19,7 @@
     transition: all .2s;
     font-weight: 600;
     font-size: 19px;
-    color: #ffffff;
+    color: #ffffff !important;
     cursor: pointer;
     outline: none;
 }
