@@ -53,28 +53,29 @@ function err () {
 }
 
 // Tab to circumvent the free version of kwesforms opening a form submission window
-function openWindow() {
-    sessionStorage.setItem("reloading", "true");
-    setTimeout(function () {
-        console.log('waiting')
-        // window.open("Contact.html")
-        window.location.href = "../Thankyou/Thankyou.html"; //will redirect to your blog page (an ex: blog.html)
-     }, 100); //will call the function after 2 secs.
+// Commented out because I dont need it now, but might later
+// function openWindow() {
+//     sessionStorage.setItem("reloading", "true");
+//     setTimeout(function () {
+//         console.log('waiting')
+//         // window.open("Contact.html")
+//         window.location.href = "../Thankyou/Thankyou.html"; //will redirect to your blog page (an ex: blog.html)
+//      }, 100); //will call the function after 2 secs.
      
-}
+// }
 
-window.onload = function() {
-    const submitDropdown = document.querySelector(".submit-dropdown")
-    const submitToggle = document.querySelector(".toggle-submit-dropdown");
-    var reloading = sessionStorage.getItem("reloading");
-    if (reloading) {
-        sessionStorage.removeItem("reloading");
-        var submital = document.getElementById("formSubmitted");
-        submitDropdown.classList.toggle("submit-expanded");
-        // setTimeout(() => {dropdown.classList.toggle("submit-expanded")}, 5000);
-        // requestAnimationFrame(fadeOutForm);
-    }
-}
+// window.onload = function() {
+//     const submitDropdown = document.querySelector(".submit-dropdown")
+//     const submitToggle = document.querySelector(".toggle-submit-dropdown");
+//     var reloading = sessionStorage.getItem("reloading");
+//     if (reloading) {
+//         sessionStorage.removeItem("reloading");
+//         var submital = document.getElementById("formSubmitted");
+//         submitDropdown.classList.toggle("submit-expanded");
+//         // setTimeout(() => {dropdown.classList.toggle("submit-expanded")}, 5000);
+//         // requestAnimationFrame(fadeOutForm);
+//     }
+// }
 
 //Function for fun 'copied' animation on about page
 
