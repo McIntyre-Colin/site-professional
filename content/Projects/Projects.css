@@ -1,0 +1,91 @@
+/* CSS for Home page of website */
+/* Importing static CSS */
+
+@import "../style.css";
+@import "../rectangles-about.css";
+@import "../Button.css";
+@import "../Nav.css";
+
+.Project {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 70vh;
+}
+
+.Project-intro {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+
+}
+
+.Project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+    width: 633px;
+    font-size: 59px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    margin-bottom: 0px;
+}
+
+.Project-subheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    width: 670px;
+    font-family: var(--main-font);
+    color: var(--alt-font-color);
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 8px;
+    letter-spacing: var(--letter-spacing);
+}
+
+.Project-projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Project-item {
+    display: flex;
+    height: 300px;
+    width: 400px;
+    background-color: var(--decorative-color-green);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.Project-item:hover {
+    scale: 1.05;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.Project-title {
+    justify-content: center;
+    font-family: var(--main-font);
+    color: var(--alt-font-color);
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: var(--letter-spacing);
+}
+

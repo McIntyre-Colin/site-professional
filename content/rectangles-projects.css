@@ -1,0 +1,175 @@
+@import "/content/style.css";
+
+:root {
+    --pulse: pulse 2s alternate infinite ease-in-out;
+    --pulse-quick: pulse 1.5s alternate infinite ease-in-out;
+    --pulse-large: pulse-big 2s alternate infinite ease-in-out;
+}
+
+.rectangles {
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes pulse {
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}
+}
+
+@keyframes pulse-big {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.green-rectangle {
+    position: absolute;
+    z-index: 0;
+    width: 330px;
+    height: 330px;
+    border-radius: 38px;
+    border-style: solid;
+    border-width: 6px;
+    border-color:var(--decorative-color-green) ;
+    top: -100px;
+    left: 55vw;
+    animation: var(--pulse);
+    animation-delay: .15s;
+}
+
+.purple-rectangle-solid {
+    position: absolute;
+    z-index: -1;
+    width: 114px;
+    height: 114px;
+    border-radius: 24px;
+    opacity: .4;
+    background-color:var(--decorative-color-purple) ;
+    top: 170px;
+    left: 52vw;
+    animation: var(--pulse-quick);
+    animation-delay: .1s;
+}
+
+.purple-rectangle-solid2 {
+    position: relative;
+    z-index: -1;
+    width: 114px;
+    height: 114px;
+    border-radius: 24px;
+    opacity: .4;
+    background-color:var(--decorative-color-purple);
+    top: 82vh;
+    left: -1vw;
+    animation: var(--pulse-quick);
+    animation-delay: .1s;
+}
+
+.white-rectangle-th {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 54px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--decorative-color-white);
+    top: 40vh;
+    left: 63vw;
+    z-index: -2;
+    opacity: 100;
+    animation: var(--pulse);
+    animation-delay: 1.5s;
+}
+
+.white-rectangle-th2 {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 54px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--decorative-color-white);
+    top: 60vh;
+    left: -8vw;
+    z-index: -2;
+    opacity: 100;
+    animation: var(--pulse);
+    animation-delay: 1s;
+}
+
+.gray-rectangle-th {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 78px;
+    border-width: 19px;
+    border-style: solid;
+    border-color: var(--decorative-color-gray);
+    opacity: .17;
+    top: 52vh;
+    left: 68vw;
+    animation: var(--pulse);
+    animation-delay: .15s;
+
+}
+
+.gray-rectangle-th2 {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    border-radius: 78px;
+    border-width: 19px;
+    border-style: solid;
+    border-color: var(--decorative-color-gray);
+    opacity: .17;
+    top: 70vh;
+    left: -4vw;
+    animation: var(--pulse);
+    animation-delay: .15s;
+
+}
+
+.gray-rectangle-solid {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background-color: var(--decorative-color-white);
+    opacity: .1;
+    top: 290px;
+    left: 59vw;
+    animation: var(--pulse-large);
+    animation-delay: 1s;
+}
+
+.gray-rectangle-solid-2 {
+    position: absolute;
+    z-index: -1;
+    width: 73px;
+    height: 73px;
+    border-radius: 16px;
+    background-color: var(--decorative-color-white);
+    opacity: .1;
+    top: 62vh;
+    left: 61vw;
+    animation: var(--pulse);
+    animation-delay: .45s;
+}
+
+.purple-rectangle-th {
+    position: absolute;
+    z-index: -2;
+    width: 159px;
+    height: 159px;
+    border-radius: 38px;
+    border-width: 8px;
+    border-style: solid;
+    border-color:var(--decorative-color-purple) ;
+    top: 60vh;
+    left: 66vw;
+    animation: var(--pulse-quick);
+    animation-delay: .8s;
+}

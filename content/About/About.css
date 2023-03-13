@@ -65,6 +65,7 @@
     font-weight: 400;
     line-height: 48px;
     margin-bottom: 8px;
+    margin-top: 4px;
     letter-spacing: var(--letter-spacing);
 }
 
@@ -81,6 +82,7 @@
     font-weight: 400;
     line-height: 48px;
     letter-spacing: var(--letter-spacing);
+    margin-top: 12px;
 }
 
 .About-intro-buttons {
